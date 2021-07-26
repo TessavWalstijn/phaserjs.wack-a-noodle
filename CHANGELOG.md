@@ -3,8 +3,8 @@
 ### Added
 
 - Preload Scene
-  - Loader
-  - Base loader functions
+  - Loadering required files
 - Main Scene
-  - Spritesheet example
-  - Sprite object example
+  - Game play
+- Game over Scene
+  - High score view
