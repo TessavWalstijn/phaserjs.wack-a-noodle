@@ -1,5 +1,5 @@
-# phaserjs.typescript-template
-Phaser3 typescript template
+# phaserjs.wack-a-noodle
+Phaser3 typescript wack a noodle
 
 ## how to run
 

@@ -6,7 +6,10 @@ enum loadTypes {
 
 export class Preloader extends Phaser.Scene {
   private _loadingBarHeight: number = 4
-  private _origin: Phaser.Math.Vector2 = new Phaser.Math.Vector2(0, this._loadingBarHeight)
+  private _origin: Phaser.Math.Vector2 = new Phaser.Math.Vector2(
+    0,
+    this._loadingBarHeight,
+  )
   private _loadingBar: Phaser.GameObjects.Graphics
   private _progressBar: Phaser.GameObjects.Graphics
   private _loadingBarColor: number = 0x12cefc
@@ -82,10 +85,28 @@ export class Preloader extends Phaser.Scene {
     this._createLoadingbar()
     this._initLoaderEvents()
 
-    this.load.spritesheet('parrot-fly', '../assets/images/ParrotFly.png', {
-      frameWidth: 400,
-      frameHeight: 400,
-      endFrame: 4,
+    this._loadImages([['Star', '../assets/images/star']])
+
+    this.load.spritesheet('WhoopNoodle', '../assets/images/whoop-noodle.png', {
+      frameWidth: 64,
+      frameHeight: 64,
+      endFrame: 20,
+    })
+
+    this.load.spritesheet(
+      'WhoopNoodleHit',
+      '../assets/images/whoop-noodle-hit.png',
+      {
+        frameWidth: 64,
+        frameHeight: 64,
+        endFrame: 11,
+      },
+    )
+
+    this.load.spritesheet('Lives', '../assets/images/lives.png', {
+      frameWidth: 96,
+      frameHeight: 32,
+      endFrame: 10,
     })
   }
 

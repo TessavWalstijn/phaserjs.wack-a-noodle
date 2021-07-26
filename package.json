@@ -1,7 +1,7 @@
 {
-  "name": "phaserjs.typescript-template",
+  "name": "phaserjs.wack-a-noodle",
   "version": "1.0.0",
-  "description": "Phaser3 typescript template",
+  "description": "Phaser3 typescript wack a noodle",
   "author": "TessavWalstijn",
   "license": "GNU-v3",
   "private": false,
