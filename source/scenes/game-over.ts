@@ -40,8 +40,8 @@ export class GameOver extends Phaser.Scene {
 
     this._lives = new Lives({
       scene: this,
-      x: width / 2,
-      y: height / 2 - 128,
+      x: Math.floor(width / 2),
+      y: Math.floor(height / 2 - 128),
     })
     this._lives.gameOver(() => {
       this.scene.start('MainScene')
@@ -54,8 +54,8 @@ export class GameOver extends Phaser.Scene {
         this._whoopNoodles.push(
           new WhoopNoodle({
             scene: this,
-            x: j * 64 + width / 2 - (max * 64) / 2 + 32,
-            y: i * 64 + height / 2 - 64,
+            x: Math.floor(j * 64 + width / 2 - (max * 64) / 2 + 32),
+            y: Math.floor(i * 64 + height / 2 - 64),
             upScore: () => {},
             takeLive: () => {},
           }),
