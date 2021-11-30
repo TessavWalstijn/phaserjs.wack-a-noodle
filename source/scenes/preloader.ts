@@ -85,9 +85,9 @@ export class Preloader extends Phaser.Scene {
     this._createLoadingbar()
     this._initLoaderEvents()
 
-    this._loadImages([['Star', '../assets/images/star']])
+    this._loadImages([['Star', './assets/images/star']])
 
-    this.load.spritesheet('WhoopNoodle', '../assets/images/whoop-noodle.png', {
+    this.load.spritesheet('WhoopNoodle', './assets/images/whoop-noodle.png', {
       frameWidth: 64,
       frameHeight: 64,
       endFrame: 20,
@@ -95,7 +95,7 @@ export class Preloader extends Phaser.Scene {
 
     this.load.spritesheet(
       'WhoopNoodleHit',
-      '../assets/images/whoop-noodle-hit.png',
+      './assets/images/whoop-noodle-hit.png',
       {
         frameWidth: 64,
         frameHeight: 64,
@@ -103,7 +103,7 @@ export class Preloader extends Phaser.Scene {
       },
     )
 
-    this.load.spritesheet('Lives', '../assets/images/lives.png', {
+    this.load.spritesheet('Lives', './assets/images/lives.png', {
       frameWidth: 96,
       frameHeight: 32,
       endFrame: 10,
